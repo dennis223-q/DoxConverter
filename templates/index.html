@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="DocuConvert — online PDF to Word and Excel converter.">
+  <title>DocuConvert — PDF Tools</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="/">Docu<span>Convert</span></a>
+  <nav><a href="#tools">PDF Tools</a><a href="#how">How it works</a></nav>
+  <a class="nav-cta" href="#converter">Get started</a>
+</header>
+
+<main>
+<section class="hero">
+  <div class="pill">⚡ Fast document tools</div>
+  <h1>Convert your files.<br><span>Keep it simple.</span></h1>
+  <p>Convert PDF files to editable Word documents or Excel spreadsheets directly in your browser.</p>
+  <a class="button primary" href="#tools">Explore tools →</a>
+</section>
+
+<section class="section" id="tools">
+  <div class="section-title">
+    <div><small>PDF TOOLS</small><h2>Choose a tool</h2></div>
+    <p>More tools can be added to this same interface later.</p>
+  </div>
+
+  <div class="grid">
+    <button class="card selected" data-tool="pdf-to-word">
+      <div class="ico blue">W</div><div><h3>PDF to Word</h3><p>Convert PDF to editable DOCX.</p></div>
+    </button>
+    <button class="card" data-tool="pdf-to-excel">
+      <div class="ico green">X</div><div><h3>PDF to Excel</h3><p>Extract PDF tables into XLSX.</p></div>
+    </button>
+    <button class="card" data-tool="word-to-pdf">
+      <div class="ico purple">P</div><div><h3>Word to PDF</h3><p>Convert DOC/DOCX to PDF.</p></div>
+    </button>
+    <button class="card disabled"><div class="ico orange">J</div><div><h3>PDF to JPG</h3><p>Coming next.</p></div></button>
+    <button class="card disabled"><div class="ico red">+</div><div><h3>Merge PDF</h3><p>Coming next.</p></div></button>
+    <button class="card disabled"><div class="ico teal">↓</div><div><h3>Compress PDF</h3><p>Coming next.</p></div></button>
+  </div>
+</section>
+
+<section class="converter" id="converter">
+  <div class="converter-box">
+    <small>CONVERTER</small>
+    <h2 id="title">PDF to Word</h2>
+    <p id="description">Upload a PDF and turn it into an editable Word document.</p>
+
+    <form id="form">
+      <label class="drop" id="drop">
+        <input id="file" type="file">
+        <div class="upload">↑</div>
+        <strong>Drop your file here</strong>
+        <span>or click to browse · maximum 50 MB</span>
+        <b id="filename">No file selected</b>
+      </label>
+      <button class="button primary wide" type="submit" id="convert">Convert to Word</button>
+    </form>
+    <div id="status"></div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <small>HOW IT WORKS</small><h2>Three simple steps</h2>
+  <div class="steps">
+    <article><b>01</b><h3>Upload</h3><p>Choose your document or drag it into the upload area.</p></article>
+    <article><b>02</b><h3>Convert</h3><p>The server processes the document with a real conversion engine.</p></article>
+    <article><b>03</b><h3>Download</h3><p>Your converted file is returned to your browser.</p></article>
+  </div>
+</section>
+</main>
+
+<footer><strong>DocuConvert</strong><span>Starter document-conversion platform</span></footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
